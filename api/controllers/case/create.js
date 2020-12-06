@@ -16,11 +16,13 @@ module.exports = {
     temperature: {
       description: 'The temperature of the case',
       type: 'number',
-      required: true
+      required: true,
+      max: 43,
+      min: 35
     },
     location: {
       description: 'The location of the case',
-      type: 'string',
+      type: 'json',
       required: true
     },
   },
